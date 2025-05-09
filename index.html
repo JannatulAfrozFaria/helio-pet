@@ -1,18 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Helio Pet</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <section>
-        <h1>Heading</h1>
+      <div class="flex-container">
+        <div>
+          <img src="/assets/item1.png" alt="display" />
+          <div class="flex margin " >
+            <img src="/assets/item2.png" alt="item2">
+            <img src="/assets/item3.png" alt="item3">
+            <img src="/assets/item4.png" alt="item4">
+            <img src="/assets/item5.png" alt="item5">
+          </div>
+        </div>
+        <div class="grid-right">
+          <h1 class="badge">Best Seller</h1>
+          <!-- RATING--- -->
+          <div class="flex-container-rating">
+            <div class="flex-container-star">
+              <img src="/assets/star.png" alt="star-icon" />
+              <img src="/assets/star.png" alt="star-icon" />
+              <img src="/assets/star.png" alt="star-icon" />
+              <img src="/assets/star.png" alt="star-icon" />
+              <img src="/assets/star.png" alt="star-icon" />
+            </div>
+            <div>
+              <span class="text-gray" style="font-size: 18px">4.9</span>
+            </div>
+            <div>
+              <span class="text-gray" style="font-size: 16px"
+                >(1,021 reviews)</span
+              >
+            </div>
+            <!-- <span>4.9</span>
+                    <span>(1,021 reviews)</span> -->
+          </div>
+          <!-- HEADING -->
+          <h1 class="heading">
+            Helio Pet Device <span class="trademark">™</span>
+          </h1>
+          <!-- REVIEW--CARD -->
+          <div class="review-card">
+            <img src="/assets//profile.png" alt="profile-icon" />
+
+            <p>
+              “We are BOTH so THANKFUL! I purchased this for my 12 year old Lab
+              mix as he's got mobility issues with the back legs. It's been 3
+              weeks and already a difference!”
+            </p>
+          </div>
+          <!-- FEATURES---LIST -->
+          <div>
+            <div class="features-list">
+              <img src="/assets//tick.png" alt="" />
+              <span>Reduce aches & pains with 5-minute sessions.</span>
+            </div>
+            <hr />
+            <div class="features-list">
+              <img src="/assets//tick.png" alt="" />
+              <span
+                >Cold Laser Therapy helps with Pain, Inflammation & more.</span
+              >
+            </div>
+            <hr />
+            <div class="features-list">
+              <img src="/assets//tick.png" alt="" />
+              <span>Professional Grade LLLT with 5 Laser Diodes.</span>
+            </div>
+          </div>
+          <!-- PRICES -->
+           <div class="flex-price">
+             <span class="compare-price"> $369.00 </span>
+             <span class="actual-price"> $249.00 </span>
+           </div>
+           <!-- ADD---TO---CART -->
+            <div class="flex">
+                <button class="add-button">Add to Cart</button>
+                <button class="round-button">
+                    <img src="/assets/minus.png" alt="decrease-icon">
+                </button>
+                <span class="number">1</span>
+                <button class="round-button">
+                    <img src="/assets/plus.png" alt="increase-icon">
+                </button>
+            </div>
+            <!-- PAYMENT--METHOD -->
+             <div class="payment">
+                <img src="/assets/payment.png" alt="">
+             </div>
+             <!-- SHIELD----DELIVERY -->
+              <div class="flex-basic">
+                <img src="/assets/shield.png" alt="shield">
+                <p class="blue">30 day money back <span class="light-gray">guarantee</span></p>
+              </div>
+              <div class="flex-basic">
+                <img src="/assets/delivery.png" alt="shield">
+                <p > <span class="light-gray">Expected </span>delivery in 2-4<span class="light-gray">business days</span> </p>
+              </div>
+        </div>
+      </div>
     </section>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
