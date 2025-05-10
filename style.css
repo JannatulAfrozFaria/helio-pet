@@ -71,6 +71,7 @@ body {
 hr{
     color: #dbdbdb;
 }
+/* PRICES------- */
 .flex-price{
     display: flex;
     align-items: end;
@@ -138,3 +139,17 @@ hr{
     font-size: ;
     color: #898989;
 }
+
+@media screen and (max-width: 768px) {
+    .flex-container {
+      display: block; 
+    }
+    
+    .grid-right {
+      width: 100%; 
+      margin-top: 20px; 
+    }
+    .badge{
+        display:none;
+    }
+  }
