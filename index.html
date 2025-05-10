@@ -16,7 +16,16 @@
     <section>
       <div class="flex-container">
         <div class="grid-left">
-          <img src="/assets/item1.png" alt="display" /> 
+          <!-- for ---small----screen -->
+          <div class="column-image">
+            <img src="/assets/item2.png" alt="item2">
+            <img src="/assets/item3.png" alt="item3">
+            <img src="/assets/item4.png" alt="item4">
+            <img src="/assets/item5.png" alt="item5">
+          </div>
+          <!-- base image------- -->
+          <img  src="/assets/item1.png" alt="display" class="display-image" /> 
+          <!-- for---large screen------- -->
           <div class="gallery-flex margin">
             <img src="/assets/item2.png" alt="item2">
             <img src="/assets/item3.png" alt="item3">
@@ -36,10 +45,10 @@
               <img src="/assets/star.png" alt="star-icon" />
             </div>
             <div>
-              <span class="text-gray" style="font-size: 18px">4.9</span>
+              <span class="text-gray-number">4.9</span>
             </div>
             <div>
-              <span class="text-gray" style="font-size: 16px"
+              <span class="text-gray"
                 >(1,021 reviews)</span
               >
             </div>
@@ -61,7 +70,7 @@
             </p>
           </div>
           <!-- FEATURES---LIST -->
-          <div>
+          <div class="featured-section">
             <div class="features-list">
               <img src="/assets//tick.png" alt="feature" />
               <span>Reduce aches & pains with 5-minute sessions.</span>
@@ -94,7 +103,7 @@
             </div>
            </div>
            <!-- ADD---TO---CART -->
-            <div class="flex">
+            <div class="flex button-margin">
                 <button class="add-button">Add to Cart</button>
                 <button class="round-button large-screen">
                     <img src="/assets/minus.png" alt="decrease-icon">
