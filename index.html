@@ -18,19 +18,19 @@
         <div class="grid-left">
           <!-- for ---small----screen -->
           <div class="column-image">
-            <img src="/assets/item2.png" alt="item2">
-            <img src="/assets/item3.png" alt="item3">
-            <img src="/assets/item4.png" alt="item4">
-            <img src="/assets/item5.png" alt="item5">
+            <img src="/assets/item2.png" alt="item2" />
+            <img src="/assets/item3.png" alt="item3" />
+            <img src="/assets/item4.png" alt="item4" />
+            <img src="/assets/item5.png" alt="item5" />
           </div>
           <!-- base image------- -->
-          <img  src="/assets/item1.png" alt="display" class="display-image" /> 
+          <img src="/assets/item1.png" alt="display" class="display-image" />
           <!-- for---large screen------- -->
           <div class="gallery-flex margin">
-            <img src="/assets/item2.png" alt="item2">
-            <img src="/assets/item3.png" alt="item3">
-            <img src="/assets/item4.png" alt="item4">
-            <img src="/assets/item5.png" alt="item5">
+            <img src="/assets/item2.png" alt="item2" />
+            <img src="/assets/item3.png" alt="item3" />
+            <img src="/assets/item4.png" alt="item4" />
+            <img src="/assets/item5.png" alt="item5" />
           </div>
         </div>
         <div class="grid-right">
@@ -48,9 +48,7 @@
               <span class="text-gray-number">4.9</span>
             </div>
             <div>
-              <span class="text-gray"
-                >(1,021 reviews)</span
-              >
+              <span class="text-gray">(1,021 reviews)</span>
             </div>
             <!-- <span>4.9</span>
                     <span>(1,021 reviews)</span> -->
@@ -89,48 +87,110 @@
             </div>
           </div>
           <!-- PRICES -->
-           <div class="flex-price">
-             <span class="compare-price"> $369.00 </span>
-             <span class="actual-price"> $249.00 </span>
-             <div class="mobile-buttons">
-                <button class="round-button">
-                    <img src="/assets/minus.png" alt="decrease-icon">
-                </button>
-                <span class="number">1</span>
-                <button class="round-button">
-                    <img src="/assets/plus.png" alt="increase-icon">
-                </button>
+          <div class="flex-price">
+            <span class="compare-price"> $369.00 </span>
+            <span class="actual-price"> $249.00 </span>
+            <div class="mobile-buttons">
+              <button class="round-button">
+                <img src="/assets/minus.png" alt="decrease-icon" />
+              </button>
+              <span class="number">1</span>
+              <button class="round-button">
+                <img src="/assets/plus.png" alt="increase-icon" />
+              </button>
             </div>
-           </div>
-           <!-- ADD---TO---CART -->
-            <div class="flex button-margin">
-                <button class="add-button">Add to Cart</button>
-                <button class="round-button large-screen">
-                    <img src="/assets/minus.png" alt="decrease-icon">
-                </button>
-                <span class="number  large-screen">1</span>
-                <button class="round-button large-screen">
-                    <img src="/assets/plus.png" alt="increase-icon">
-                </button>
+          </div>
+          <!-- ADD---TO---CART -->
+          <div class="flex button-margin">
+            <button class="add-button">Add to Cart</button>
+            <button class="round-button large-screen">
+              <img src="/assets/minus.png" alt="decrease-icon" />
+            </button>
+            <span class="number large-screen">1</span>
+            <button class="round-button large-screen">
+              <img src="/assets/plus.png" alt="increase-icon" />
+            </button>
+          </div>
+          <!-- PAYMENT--METHOD -->
+          <div class="payment">
+            <img src="/assets/payment.png" alt="" />
+          </div>
+          <!-- SHIELD----DELIVERY -->
+          <div>
+            <div class="flex-basic">
+              <img src="/assets/shield.png" alt="shield" />
+              <p class="blue">
+                30 day money back <span class="light-gray">guarantee</span>
+              </p>
             </div>
-            <!-- PAYMENT--METHOD -->
-             <div class="payment">
-                <img src="/assets/payment.png" alt="">
-             </div>
-             <!-- SHIELD----DELIVERY -->
-              <div>
-                <div class="flex-basic">
-                    <img src="/assets/shield.png" alt="shield">
-                    <p class="blue">30 day money back <span class="light-gray">guarantee</span></p>
-                  </div>
-                  <div class="flex-basic">
-                    <img src="/assets/delivery.png" alt="shield">
-                    <p > <span class="light-gray">Expected </span>delivery in 2-4<span class="light-gray">business days</span> </p>
-                  </div>
-              </div>
+            <div class="flex-basic">
+              <img src="/assets/delivery.png" alt="shield" />
+              <p>
+                <span class="light-gray">Expected </span>delivery in 2-4<span
+                  class="light-gray"
+                  >business days</span
+                >
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <!-- Cart Drawer -->
+    <div id="overlay"></div>
+    <div id="cart-drawer">
+      <div class="drawer-flex">
+        <span>Your Cart</span>
+        <button id="close-drawer">×</button>
+      </div>
+      <p class="notification">
+        🎉Your order is eligible standard free shipping.
+      </p>
+      <div class="product-flex">
+        <span>Product</span>
+        <span>Total</span>
+      </div>
+      <hr/>
+      <div class="drawer-content">
+        <img src="/assets/item1.png" alt="Product" class="drawer-image" />
+        <div class="drawer-info">
+          <div>
+            <h1 class="drawer-heading">
+              Helio Pet Device <span class="trademark">™</span>
+            </h1>
+          </div>
+          <div class="drawer-prices">
+            <span id="drawer-compare-price" class="compare-price">$369.00</span>
+          </div>
+          <div class="drawer-quantity">
+            <button id="drawer-minus" class="round-button">
+              <img src="/assets/minus.png" alt="decrease-icon" />
+            </button>
+            <span id="drawer-count">1</span>
+            <button id="drawer-plus" class="round-button">
+              <img src="/assets/plus.png" alt="increase-icon" />
+            </button>
+            <!-- DELETE BUTTON----- -->
+          <button id="delete-product" class="delete-button">
+            <img src="/assets/delete.png" alt="delete-icon">
+          </button>
+          </div>
+          
+        </div>
+        <div class="drawer-prices">
+          <span id="drawer-actual-price" class="actual-price">$249.00</span>
+        </div>
+      </div>
+      <!-- TOTAL----- -->
+      <div class="justify-end">
+        <hr />
+        <div class="product-flex">
+          <span>Estimated total</span>
+          <span id="drawer-total-price" class="drawer-prices">$249.00</span>
+        </div>
+        <button  class="checkout-button">Checkout</button>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
