@@ -160,7 +160,7 @@ hr {
 @media screen and (max-width: 768px) {
   body {
     margin: 0;
-    padding: 8% 2%;
+    padding: 8% 3%;
     /* overflow-x: hidden; */
   }
   .flex-container {
@@ -218,23 +218,31 @@ hr {
 }
   .heading {
     font-size: 32px;
-    margin: 5% 0;
+    margin: 4% 0;
   }
   .review-card {
     background-color: transparent;
     padding: 0;
+    font-size: 12px;
   }
   .compare-price {
     display: none;
+  }
+  .actual-price{
+    font-size: 32px;
   }
   .features-list img {
     display: none;
   }
   .featured-section{
-    margin: 12% 0 16%;
+    margin: 8% 0 12%;
+  }
+  .features-list{
+    font-size: 12px;
   }
   .add-button {
     width: 100%;
+    font-size: 16px;
   }
   .round-button{
     padding: 35%;
