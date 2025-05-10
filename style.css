@@ -15,6 +15,11 @@ body {
     margin: 1% 0%;
 }
 /* RIGHT ----PORTION */
+.gallery-flex{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
 .grid-right{
     /* display: grid;
     gap: 6px; */
@@ -139,17 +144,49 @@ hr{
     font-size: ;
     color: #898989;
 }
-
+.mobile-buttons{
+    display: none;
+}
 @media screen and (max-width: 768px) {
+    body{
+        margin: 0;
+        padding: 8% 5%;
+    }
     .flex-container {
       display: block; 
     }
-    
+   .grid-left{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .gallery-flex{
+        display: none;
+    }
     .grid-right {
       width: 100%; 
-      margin-top: 20px; 
+      margin-top: 40px; 
+      padding-left: 12px;
     }
     .badge{
         display:none;
+    }
+    .review-card{
+        background-color: transparent;
+        padding: 0;
+    }
+    .compare-price{
+        display: none;
+    }
+    .features-list img{
+        display: none;
+    }
+    .mobile-buttons{
+        display: flex;
+        align-items: center;
+        gap: 2%;
+        margin-left: 4px;
+    }
+    .large-screen{
+        display: none;
     }
   }
